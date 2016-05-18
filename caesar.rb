@@ -1,7 +1,9 @@
 def caesar_cipher(input, shift)
+	output = ""
 	input.each_byte do |b|
-		print cycle_char(b, shift).chr
+		output << cycle_char(b, shift).chr
 	end
+	output
 end
 
 def cycle_char(char_number, shift)
@@ -24,7 +26,7 @@ def cycle_char(char_number, shift)
 	end
 end
 
-caesar_cipher("What a string!", 5)
+#caesar_cipher("What a string!", 5)
 
 
 		
